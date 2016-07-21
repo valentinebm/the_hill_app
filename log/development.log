@@ -1,0 +1,1124 @@
+Started GET "/" for ::1 at 2016-07-21 19:12:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 682ms (Views: 671.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 19:12:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 19:15:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 19:15:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160721174007)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160721174007)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (125.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_hill_development"[0m
+  [1m[35m (124.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_hill_test"[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160721174650)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160721174650"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-07-21 17:46:57 UTC], ["updated_at", 2016-07-21 17:46:57 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnToUsers (20160721174724)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (122.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_hill_development"[0m
+  [1m[35m (121.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "the_hill_test"[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160721174809)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160721174809"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-07-21 17:48:15 UTC], ["updated_at", 2016-07-21 17:48:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnToUsers (20160721174821)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.2ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160721174821"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/" for ::1 at 2016-07-21 20:03:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 550ms (Views: 532.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:07:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 404ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007fc13a905648>:0x007fc138e82e10>
+Did you mean?  current_page?):
+    12:     <%= yield %>
+    13: 
+    14:     <div id="user-widget">
+    15:     <% if current_user %>
+    16:       Welcome <strong><%= current_user.name %></strong>!
+    17:       <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    18:     <% else %>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__3480153660324173621_70233933357380'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+Started GET "/" for ::1 at 2016-07-21 20:07:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 286ms (Views: 273.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:07:48 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:07:48 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBBly8CJzvo5jh-cmnY9CNAsl1d457tq9TvtdjPyqfxFImp-sLtaU2vfQ9NcYqRwLxUqFFDzQbMA7rYA8p3wOasutZq8oEEJkPfwZpoHPFkIUuVhXxufjRA8j9n2LcCgknkheRMV19mpZLslDAsheIlHjFe1Gl1_qZMZt7pE0VzADdO6bRyn9BkGQgPn9eWQdYu59SLFpde4LobyBMo-W3b7lmtOBrL2anSdGmDPkmwRryS27bhD2hiw6Q-TF9yDpDmNrYHBwR5aZbh49Waf8mIwrbMFFSb7N8hyThP0o1x_KlaozTJkEjRvGR2vFgknho&state=936ed7af600e5af8b7d5d2d362d029ef2f7099000b6895e6" for ::1 at 2016-07-21 20:08:02 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBBly8CJzvo5jh-cmnY9CNAsl1d457tq9TvtdjPyqfxFImp-sLtaU2vfQ9NcYqRwLxUqFFDzQbMA7rYA8p3wOasutZq8oEEJkPfwZpoHPFkIUuVhXxufjRA8j9n2LcCgknkheRMV19mpZLslDAsheIlHjFe1Gl1_qZMZt7pE0VzADdO6bRyn9BkGQgPn9eWQdYu59SLFpde4LobyBMo-W3b7lmtOBrL2anSdGmDPkmwRryS27bhD2hiw6Q-TF9yDpDmNrYHBwR5aZbh49Waf8mIwrbMFFSb7N8hyThP0o1x_KlaozTJkEjRvGR2vFgknho", "state"=>"936ed7af600e5af8b7d5d2d362d029ef2f7099000b6895e6"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:08:06 UTC], ["updated_at", 2016-07-21 18:08:06 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 9.1ms)
+
+
+  
+NoMethodError (undefined method `email=' for #<User:0x007f97595ac1a0>):
+  
+app/models/user.rb:5:in `create_with_omniauth'
+app/controllers/sessions_controller.rb:4:in `create'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20160721181006)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6983220822191533920);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20160721181059)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20160721181059"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6983220822191533920)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/" for ::1 at 2016-07-21 20:11:26 +0200
+Started GET "/" for ::1 at 2016-07-21 20:11:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 579ms (Views: 566.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 569ms (Views: 566.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:11:29 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:11:29 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQA0p-yaNafG9yYbfZtG9E7Wu0BqVBxU-GDJOhOJ1X5cfrlNbOdzCxubkekYII4OxElfgquykhkphc_WGhZikjkA5iLR5Dscmr668fMbl7AuAF8bFIRIXgqhgHQJhCkHOFOY6aa_ZP6g4pQBnUKP-3inYYnoYVgIt2stHPScvEMQkF3zycxDA4EU3WGsYr7jX4VOdR23PR6gahT_ltw0XBX5DmSU0swvMP8ggGMESUNK9FbL5R7GQzRyTxTonKzi9barIxxbNjovUDbqqJSPjgKPsIKB_ckCL4tH6QMFE1PoM0BLOvQUoIBmBV9S8LxerYA&state=94814f9b965e5734beb19daddfe8c0ec9e3db517c81c1750" for ::1 at 2016-07-21 20:11:29 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQA0p-yaNafG9yYbfZtG9E7Wu0BqVBxU-GDJOhOJ1X5cfrlNbOdzCxubkekYII4OxElfgquykhkphc_WGhZikjkA5iLR5Dscmr668fMbl7AuAF8bFIRIXgqhgHQJhCkHOFOY6aa_ZP6g4pQBnUKP-3inYYnoYVgIt2stHPScvEMQkF3zycxDA4EU3WGsYr7jX4VOdR23PR6gahT_ltw0XBX5DmSU0swvMP8ggGMESUNK9FbL5R7GQzRyTxTonKzi9barIxxbNjovUDbqqJSPjgKPsIKB_ckCL4tH6QMFE1PoM0BLOvQUoIBmBV9S8LxerYA", "state"=>"94814f9b965e5734beb19daddfe8c0ec9e3db517c81c1750"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:11:30 UTC], ["updated_at", 2016-07-21 18:11:30 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:11:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/signout" for ::1 at 2016-07-21 20:12:30 +0200
+  
+ActionController::RoutingError (uninitialized constant SessionController):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.5.2) lib/puma/configuration.rb:225:in `call'
+puma (3.5.2) lib/puma/server.rb:569:in `handle_request'
+puma (3.5.2) lib/puma/server.rb:406:in `process_client'
+puma (3.5.2) lib/puma/server.rb:271:in `block in run'
+puma (3.5.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (14.6ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.1ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.0ms)
+Started GET "/" for ::1 at 2016-07-21 20:14:04 +0200
+  
+SyntaxError (/Users/valentinebm/Desktop/the_hill_repo/the_hill_app/config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  get 'signout', to: 'session#destroy', as 'signout'
+                                            ^):
+  
+config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.7ms)
+Started GET "/" for ::1 at 2016-07-21 20:14:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:14:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:14:28 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:14:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:14:29 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:14:29 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQCkJ9AEzsbPVC45MRZaDeSgip0rywOGaobqMUD93axwzLFEZt4h-8VxioYVSXA9HsjgoCNg4SJiqbQ3_BzhRb9faKTKu6AtlM9ebJ6AAkytb4ArFco05R-AW4UwxP1adVTFEgpESWeVA3Z6f6Etx-vboacPVC4QtSWbJMBwFoJf4Oq_efPGDjp8q5MgS4yqmZStsX0cHDUmmXtNfw4VrvJULwb7lSM1VyK0w5VSUzBRxbDEOzR4SvMZ4RTxecCey0M6PPdOrCCDv-tUVK8iGUn5RIgxpUDOHps790T5_UU8QGXVUCLchPmxLHlebMsIfzw&state=2c85ef3fe0bdf7f2846b62cf4fe7eecdef1868de5eb3e279" for ::1 at 2016-07-21 20:14:29 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCkJ9AEzsbPVC45MRZaDeSgip0rywOGaobqMUD93axwzLFEZt4h-8VxioYVSXA9HsjgoCNg4SJiqbQ3_BzhRb9faKTKu6AtlM9ebJ6AAkytb4ArFco05R-AW4UwxP1adVTFEgpESWeVA3Z6f6Etx-vboacPVC4QtSWbJMBwFoJf4Oq_efPGDjp8q5MgS4yqmZStsX0cHDUmmXtNfw4VrvJULwb7lSM1VyK0w5VSUzBRxbDEOzR4SvMZ4RTxecCey0M6PPdOrCCDv-tUVK8iGUn5RIgxpUDOHps790T5_UU8QGXVUCLchPmxLHlebMsIfzw", "state"=>"2c85ef3fe0bdf7f2846b62cf4fe7eecdef1868de5eb3e279"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:14:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:15:24 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:15:24 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:16:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:16:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:16:58 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:16:58 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQA74x7PFj8WP-wUyWuNcAtU5w4gYi80NHaJ8ErUGdX_8_vLvSGurOyR7R2jrSG-Ua2phEanAwIjd0qkAYQaowfqCCgtHKN_qo5XhyapNBvN3vW25o2tu-AT4yCkg1nipC7wvYK_sXjUGLDTUoGTVmtpHxKzG50qNd-VrtbhJSij3AdO-ASLpmTobkKTqgYWEbDKzXe565Q0-IypgiW3SDM6Ev7pXg4C_zhEoybyeKH-dpRlz-hzIy7q9YyPbUTgjUz5_a3kgjCQaGzivdaAeD9sYlTRaCVze_vFz3GeRrjcC8vNg5y4VVCAYbKIbA2B02E&state=8539e9bd2b8b98ff6256ddf1371618407e1ada3a929d5831" for ::1 at 2016-07-21 20:16:58 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQA74x7PFj8WP-wUyWuNcAtU5w4gYi80NHaJ8ErUGdX_8_vLvSGurOyR7R2jrSG-Ua2phEanAwIjd0qkAYQaowfqCCgtHKN_qo5XhyapNBvN3vW25o2tu-AT4yCkg1nipC7wvYK_sXjUGLDTUoGTVmtpHxKzG50qNd-VrtbhJSij3AdO-ASLpmTobkKTqgYWEbDKzXe565Q0-IypgiW3SDM6Ev7pXg4C_zhEoybyeKH-dpRlz-hzIy7q9YyPbUTgjUz5_a3kgjCQaGzivdaAeD9sYlTRaCVze_vFz3GeRrjcC8vNg5y4VVCAYbKIbA2B02E", "state"=>"8539e9bd2b8b98ff6256ddf1371618407e1ada3a929d5831"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:16:59 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:18:49 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:18:49 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:18:51 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:18:52 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQAWquwVcWwsR-W599b_A1xafvKb3jm6ioqMur68eFdU4zdpWhaoSrlctyOyrLV3ZXnhJr7Mn98VWD6-Q8ClrqRgAKKjUauKcZuHxPfb41bJ78eY9-tAVPeECFAmCWN0sY5Mr7jrsZeJ4PJ0yZnwPXz129AjGgcNJcnFFUfEvUXdojdhO3LFVy6w4aj0Fcbwt1ZUCV2OzlwzB3gXR3MDi1CftdHwuNn5B1tpYP9A0tGQUkIaS_vImB_DK4w7_XJtHyVlWvrD2OMTwEjLQdeuw-KBmxF-ND1O8fpHGY5jOuE8w6T6hAL9RPEyGPJQPq_xQdU&state=d6162dc217115f1a50a0a16213803b34fcf89079d1e08ade" for ::1 at 2016-07-21 20:18:52 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAWquwVcWwsR-W599b_A1xafvKb3jm6ioqMur68eFdU4zdpWhaoSrlctyOyrLV3ZXnhJr7Mn98VWD6-Q8ClrqRgAKKjUauKcZuHxPfb41bJ78eY9-tAVPeECFAmCWN0sY5Mr7jrsZeJ4PJ0yZnwPXz129AjGgcNJcnFFUfEvUXdojdhO3LFVy6w4aj0Fcbwt1ZUCV2OzlwzB3gXR3MDi1CftdHwuNn5B1tpYP9A0tGQUkIaS_vImB_DK4w7_XJtHyVlWvrD2OMTwEjLQdeuw-KBmxF-ND1O8fpHGY5jOuE8w6T6hAL9RPEyGPJQPq_xQdU", "state"=>"d6162dc217115f1a50a0a16213803b34fcf89079d1e08ade"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:18:52 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:19:00 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:20 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:21 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQA3OKAy2NeJ-cZ0jIBi90rqs2hx17PR5Ar9AxH91jZeS4pCNmAqeNTNSAo1Y0gMBD5SVhrCJ356GI4Y2gQkRAtfSwSh0Ky3EwqV2xDEVpjx75PhVLEbKhjdL7fx5jSl_cByYf7Ii_8QFOBv4bgvyDNeixj3K9lct-8_OVyH81OMg4mxg7Lwzt0ybQ5D6oAWCAXjqLJ7fVCkaaJpc1YMrruE9st4zSAKo7zDn7nuh1JEE02332URgfm2gwOynGVhtSuaV53uqT7VYEuUDuWZTIqEJ8jri1A23UrSHki8i4RUN-kfTvmHrZGpS3ptuAkA2pI&state=5062f7f54b9b241d431f2169e3a9a54d60562e6cd4402e38" for ::1 at 2016-07-21 20:19:21 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQA3OKAy2NeJ-cZ0jIBi90rqs2hx17PR5Ar9AxH91jZeS4pCNmAqeNTNSAo1Y0gMBD5SVhrCJ356GI4Y2gQkRAtfSwSh0Ky3EwqV2xDEVpjx75PhVLEbKhjdL7fx5jSl_cByYf7Ii_8QFOBv4bgvyDNeixj3K9lct-8_OVyH81OMg4mxg7Lwzt0ybQ5D6oAWCAXjqLJ7fVCkaaJpc1YMrruE9st4zSAKo7zDn7nuh1JEE02332URgfm2gwOynGVhtSuaV53uqT7VYEuUDuWZTIqEJ8jri1A23UrSHki8i4RUN-kfTvmHrZGpS3ptuAkA2pI", "state"=>"5062f7f54b9b241d431f2169e3a9a54d60562e6cd4402e38"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:19:22 UTC], ["updated_at", 2016-07-21 18:19:22 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:19:24 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:24 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 280ms (Views: 268.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:34 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:34 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQDEknyNaPxXlScP5g_dOqWj8qU_GJOAIU0r8uqhBhRKQqE1mHRrTn5Yb3GR9tMfUmLaWxYTSYMAuiB6Ns2G35G-lTKWmBGTgjMbIb9qCtk7l3jVmkAYRrqvuFx6lWfiowdLnmFZOpr2kMkCrAS71ib_Wjt9IPm6BSxnusbqe00w4UwfTKsGX-KyZUrl5QCZexW7XqMzKn6Xr0L2Ecqvb4jVwFlwv3rLXlQpuJ5XQzC2U41-zKRb50wfEl5fhHgw6nScI2moe5rpL8GCMphb3NdRv5M7na1AA5_6rtU9nroM66xUBYj-J-65yVjCd6QJYgg&state=479786daa48641a264a172301a5ca57081e19138a05791c8" for ::1 at 2016-07-21 20:19:35 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDEknyNaPxXlScP5g_dOqWj8qU_GJOAIU0r8uqhBhRKQqE1mHRrTn5Yb3GR9tMfUmLaWxYTSYMAuiB6Ns2G35G-lTKWmBGTgjMbIb9qCtk7l3jVmkAYRrqvuFx6lWfiowdLnmFZOpr2kMkCrAS71ib_Wjt9IPm6BSxnusbqe00w4UwfTKsGX-KyZUrl5QCZexW7XqMzKn6Xr0L2Ecqvb4jVwFlwv3rLXlQpuJ5XQzC2U41-zKRb50wfEl5fhHgw6nScI2moe5rpL8GCMphb3NdRv5M7na1AA5_6rtU9nroM66xUBYj-J-65yVjCd6QJYgg", "state"=>"479786daa48641a264a172301a5ca57081e19138a05791c8"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:9)
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:35 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:19:48 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:48 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:49 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:19:50 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQA7E29GNnUEnoTcnU5dr-617wtLjRhJnhIpOvPwInP7llSmz_8hBcRa_aXC3_JHp6wT18mrFRjT2mE8NmFlKH84flHdHVx3cMOhEJNcoDaEpuz0BdVqAdlwjdLD8xIg1tHHYVlp_9wVmU0yGEU5NGYJEA3rjrOZMj8ZzbAaFS5yJF7YDNjhTdGe6jr0setv2xkSgGE4yg4haukj_Q-twBa-ABok4U6azgs6V7wfxfV3DIySAckCZ5R_fXjuo1hoaAcpEtL6yJNVAU_OnbfQ-Kxvm435NWk1XjPCT_eQt2jGz5pnASE49LZWSGsGxO6nDH0&state=81f33734ac1cf36356c6a82e465dadea8de95eef28b8b30f" for ::1 at 2016-07-21 20:19:50 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQA7E29GNnUEnoTcnU5dr-617wtLjRhJnhIpOvPwInP7llSmz_8hBcRa_aXC3_JHp6wT18mrFRjT2mE8NmFlKH84flHdHVx3cMOhEJNcoDaEpuz0BdVqAdlwjdLD8xIg1tHHYVlp_9wVmU0yGEU5NGYJEA3rjrOZMj8ZzbAaFS5yJF7YDNjhTdGe6jr0setv2xkSgGE4yg4haukj_Q-twBa-ABok4U6azgs6V7wfxfV3DIySAckCZ5R_fXjuo1hoaAcpEtL6yJNVAU_OnbfQ-Kxvm435NWk1XjPCT_eQt2jGz5pnASE49LZWSGsGxO6nDH0", "state"=>"81f33734ac1cf36356c6a82e465dadea8de95eef28b8b30f"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:9)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:50 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/signout" for ::1 at 2016-07-21 20:19:58 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:19:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (2.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+Started GET "/" for ::1 at 2016-07-21 20:22:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 291ms (Views: 280.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:22:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:22:14 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:22:14 +0200
+(facebook) Request phase initiated.
+Started GET "/" for ::1 at 2016-07-21 20:24:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:24:03 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:24:03 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQDHUJjUrwRyYZqDJ_FOBi2uCTaKm3lrZYaeQogxb2DED_DLtC_ZDV8Qzpnz2Et-TX9r4pt8-3t9Qe0EHjjEPnXx0YmeUmiarg6DOzwHlb1CKrjbZMO99crHmdp54lea6u241DKgoRfWW6eHKbKetKuFu9WGcZYwijAYVIs4mKF8ZEJ51W89TKx-VnvzIadv1TFgbMH1-_MyEyAhgBXH-eoA4kqcLsRSn9X9Yad8clxgDtU_KT7IMT4ZVrDOdbIOviBjNmHj0jofkdpx8IO3nHP34OIAcfsrrP4a2NykKILXNuL9aSvKv4HUPCRlZRqOEIc&state=e6af9167621a77da0ffd21832cd3b7fc0599bcb9da3284c3" for ::1 at 2016-07-21 20:24:09 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDHUJjUrwRyYZqDJ_FOBi2uCTaKm3lrZYaeQogxb2DED_DLtC_ZDV8Qzpnz2Et-TX9r4pt8-3t9Qe0EHjjEPnXx0YmeUmiarg6DOzwHlb1CKrjbZMO99crHmdp54lea6u241DKgoRfWW6eHKbKetKuFu9WGcZYwijAYVIs4mKF8ZEJ51W89TKx-VnvzIadv1TFgbMH1-_MyEyAhgBXH-eoA4kqcLsRSn9X9Yad8clxgDtU_KT7IMT4ZVrDOdbIOviBjNmHj0jofkdpx8IO3nHP34OIAcfsrrP4a2NykKILXNuL9aSvKv4HUPCRlZRqOEIc", "state"=>"e6af9167621a77da0ffd21832cd3b7fc0599bcb9da3284c3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:24:09 UTC], ["updated_at", 2016-07-21 18:24:09 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:9)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:24:09 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:24:15 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:24:15 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:27:25 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:27:25 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQDseO8jh7JYng9l5lxUqT8X2PGtFdklb0xnVNREKRMqCxcYkIBABqoevCLohlNQ214I26AKUwtzkk39O6YmnIaFQEyf25_u1ZFduy7K-9GrxozeKp2BFfpWlKj9q8X7LRtrkRZi0VngQeayAHcNss5qeh1_g93dmJcNrZ3C8bnPsa_fY0EwLA5Yv4UP_M-VG1R4dmvk07g6_l-3p6QVfnTIjBpEmqBKddOlyXbEhtj8EzsKAs40c_xI1JGX_T1Qm7rW9VPB0l6W76Zqp5Wu-VUzr0sDfSGHDmXfULWpPweAtiaJkM2GGCm4D3ZGrNE_NcQ&state=61966ca8672da64d7ef8e38bccc87c5d4c5c159e11043ae2" for ::1 at 2016-07-21 20:27:25 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDseO8jh7JYng9l5lxUqT8X2PGtFdklb0xnVNREKRMqCxcYkIBABqoevCLohlNQ214I26AKUwtzkk39O6YmnIaFQEyf25_u1ZFduy7K-9GrxozeKp2BFfpWlKj9q8X7LRtrkRZi0VngQeayAHcNss5qeh1_g93dmJcNrZ3C8bnPsa_fY0EwLA5Yv4UP_M-VG1R4dmvk07g6_l-3p6QVfnTIjBpEmqBKddOlyXbEhtj8EzsKAs40c_xI1JGX_T1Qm7rW9VPB0l6W76Zqp5Wu-VUzr0sDfSGHDmXfULWpPweAtiaJkM2GGCm4D3ZGrNE_NcQ", "state"=>"61966ca8672da64d7ef8e38bccc87c5d4c5c159e11043ae2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:9)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:27:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (3.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for ::1 at 2016-07-21 20:41:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 3.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/welcome/index.html.erb:3:in `_app_views_welcome_index_html_erb__3771290392254834342_70098173437200'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.2ms)
+Started GET "/" for ::1 at 2016-07-21 20:41:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/welcome/index.html.erb:3:in `_app_views_welcome_index_html_erb__3771290392254834342_70098195497940'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+Started GET "/" for ::1 at 2016-07-21 20:41:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 4.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/welcome/index.html.erb:3:in `_app_views_welcome_index_html_erb__1136589840454413056_70147498168300'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.4ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for ::1 at 2016-07-21 20:42:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 4.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/welcome/index.html.erb:3:in `_app_views_welcome_index_html_erb__3288574008254694403_70357963904260'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+Started GET "/" for ::1 at 2016-07-21 20:42:52 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 222ms (Views: 220.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:42:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/welcome/index.html.erb:3:in `_app_views_welcome_index_html_erb__3288574008254694403_70357958123840'
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.5ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/valentinebm/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.7ms)
+Started GET "/" for ::1 at 2016-07-21 20:43:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:43:03 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:43:03 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBnWiMEdkibwKdR3wgkZLCTpZTTivW4c5RXfEs2diGOZPxQ2wWP2K_xvwcAY9XfQCuFGOv428g56XeCnorYkN0V20N3Xm7x7tdqHsnTVjgNt_8RucQ8pBVMEalAPQ7y2vTDlvTHkk7bEVvvxnNURwKtGiJrfK_7lBurmKS3P3hOPRG5ogTxXOzaU2d1FO0prDLoD1y_Fd8QirYfc5GMIy7xa8o8R1-hcEnUDu3PSwYkmp1hTjgUhUNG360bhW8sf0AYTOgZCQxpBm7tiEgKd2Nkcjc-zpER-YrMhDOQ7lPCGx1yvTHMuWsoxMW7avROsoY&state=e5117ae494959a90def6643dbb33d03c1e945179272d4364" for ::1 at 2016-07-21 20:43:03 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBnWiMEdkibwKdR3wgkZLCTpZTTivW4c5RXfEs2diGOZPxQ2wWP2K_xvwcAY9XfQCuFGOv428g56XeCnorYkN0V20N3Xm7x7tdqHsnTVjgNt_8RucQ8pBVMEalAPQ7y2vTDlvTHkk7bEVvvxnNURwKtGiJrfK_7lBurmKS3P3hOPRG5ogTxXOzaU2d1FO0prDLoD1y_Fd8QirYfc5GMIy7xa8o8R1-hcEnUDu3PSwYkmp1hTjgUhUNG360bhW8sf0AYTOgZCQxpBm7tiEgKd2Nkcjc-zpER-YrMhDOQ7lPCGx1yvTHMuWsoxMW7avROsoY", "state"=>"e5117ae494959a90def6643dbb33d03c1e945179272d4364"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:43:04 UTC], ["updated_at", 2016-07-21 18:43:04 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:43:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:43:11 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:43:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:43:15 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/signout" for ::1 at 2016-07-21 20:44:22 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:44:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for ::1 at 2016-07-21 20:45:23 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:45:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 282ms (Views: 270.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:45:35 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:45:36 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQDyedX-7dB0_dZA4Le2eF6hrnKT4UignVLUcgD1CKkmA2CC_5quvV0C-zLdQ9zq94Sd5VFG-CRT_62NOIq0YD8Rti_GLv5VulsmArUJC6kV7kw_i_u4xNgNWGgBSA4x99go5MJAPOjGhzNxImRMLLAOhkHlje46fM6zb7zFdZRtHpV2OVNwGLI25u3UwDaXUu97pAC9Jx7wJIIAN5EJ-xgaM_wvvUDwop_cirtN8e_ybdbsU7oZGkAFz6vpNQfVs8cLBqKbPfwo1UMaVui-rGdV6wv8my9SCxAM2eBdivBn0oxMzO22qRtk1A1Wa5HcGkQ&state=cbc2025927991d3e6e020ace2ae0e60054dae0211af7d60a" for ::1 at 2016-07-21 20:45:43 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDyedX-7dB0_dZA4Le2eF6hrnKT4UignVLUcgD1CKkmA2CC_5quvV0C-zLdQ9zq94Sd5VFG-CRT_62NOIq0YD8Rti_GLv5VulsmArUJC6kV7kw_i_u4xNgNWGgBSA4x99go5MJAPOjGhzNxImRMLLAOhkHlje46fM6zb7zFdZRtHpV2OVNwGLI25u3UwDaXUu97pAC9Jx7wJIIAN5EJ-xgaM_wvvUDwop_cirtN8e_ybdbsU7oZGkAFz6vpNQfVs8cLBqKbPfwo1UMaVui-rGdV6wv8my9SCxAM2eBdivBn0oxMzO22qRtk1A1Wa5HcGkQ", "state"=>"cbc2025927991d3e6e020ace2ae0e60054dae0211af7d60a"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", 2016-07-21 18:45:43 UTC], ["updated_at", 2016-07-21 18:45:43 UTC], ["provider", "facebook"], ["uid", "10157207096260113"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "email" = $2, "password" = $3, "name" = $4 WHERE "users"."id" = $5[0m  [["updated_at", 2016-07-21 18:45:43 UTC], ["email", "10157207096260113@facebook.com"], ["password", "10157207096260113"], ["name", "Valentine BM"], ["id", 6]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:45:44 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:48:47 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:48:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:48:48 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:48:48 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQCAQ44l-aDZwbvMtWHzUs-GhfVJ27C9cc4Yxbc9uTluUr3t3CguQZnElj_u23NrNVaESN_2pOiTupilkGK4TJOG3Y9gzMSkPoMDxQN7Sj2AigrTgCiNLJ4CIVHOG1pL-X_qHZWpcGHvhfApQjTl2FJniiWN-iGsLnaR_02ayqhRIX3vhTOg4lCi4hCFzYWtnQCJLvk534xOl20Uk3GOIizoua7dD7MEnqDDH3QBvMdOc9S2aKwhYJcsVQkqdYci9rScG5aQBbVJ3K4Kiefs5zx1GQL6IxTcCBnPe7MVU-7bG3GId2kjEBHoEfuNYBO1ao8&state=8471af11673f9734df0b4c5a69563b0b45bc3716cf40d7a1" for ::1 at 2016-07-21 20:48:48 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCAQ44l-aDZwbvMtWHzUs-GhfVJ27C9cc4Yxbc9uTluUr3t3CguQZnElj_u23NrNVaESN_2pOiTupilkGK4TJOG3Y9gzMSkPoMDxQN7Sj2AigrTgCiNLJ4CIVHOG1pL-X_qHZWpcGHvhfApQjTl2FJniiWN-iGsLnaR_02ayqhRIX3vhTOg4lCi4hCFzYWtnQCJLvk534xOl20Uk3GOIizoua7dD7MEnqDDH3QBvMdOc9S2aKwhYJcsVQkqdYci9rScG5aQBbVJ3K4Kiefs5zx1GQL6IxTcCBnPe7MVU-7bG3GId2kjEBHoEfuNYBO1ao8", "state"=>"8471af11673f9734df0b4c5a69563b0b45bc3716cf40d7a1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:48:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:52:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 313ms (Views: 293.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:52:34 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:52:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:52:35 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 20:52:35 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQCONoSc9QA4epq1loYEtrox9yms1nbhIp2ZouHRrKd4TkpqWtN7A07M4MEYKk7fp8Y1s3Q56LMST57F2zvWfgwIhu1SsPRckN66ipS70qnFoI3eXM8b8f_WKwqsqq_RUY9YbAiu8WeQ5j8VHOtc37q0sABqXf5LTSgHpoxZVcvx7qLwUpReFoR3ZWrd7fQ3orICHoyEhfQ42XUBNH7fX_v7GZ6QPTQCSrwwFHV1KooiLX1ITCdzIualtW0taSXJFATuvLRf7SiHmw7q4bX0fpd5S2hTzlJSxilUyMXvVK5kgcJFVlhehvd8WVjg7k5HS-g&state=e3043db2c6f1ea10f64af57293cf9cef3d3ae4e650ec8cfb" for ::1 at 2016-07-21 20:52:35 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCONoSc9QA4epq1loYEtrox9yms1nbhIp2ZouHRrKd4TkpqWtN7A07M4MEYKk7fp8Y1s3Q56LMST57F2zvWfgwIhu1SsPRckN66ipS70qnFoI3eXM8b8f_WKwqsqq_RUY9YbAiu8WeQ5j8VHOtc37q0sABqXf5LTSgHpoxZVcvx7qLwUpReFoR3ZWrd7fQ3orICHoyEhfQ42XUBNH7fX_v7GZ6QPTQCSrwwFHV1KooiLX1ITCdzIualtW0taSXJFATuvLRf7SiHmw7q4bX0fpd5S2hTzlJSxilUyMXvVK5kgcJFVlhehvd8WVjg7k5HS-g", "state"=>"e3043db2c6f1ea10f64af57293cf9cef3d3ae4e650ec8cfb"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_repo/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:52:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 20:52:38 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 20:52:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 21:03:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 303ms (Views: 291.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 21:03:28 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 21:03:28 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBvOA6P-7b_DwSSw1dB2KX0uRUqWGChZUC4T9nw0UxHAwn1jrI_-G-44rdIJZvTSkQ5M0UCW4Lp0-EsABvDjwrpsmuwMFDMoAsixgLtaUwHVw_Wqe9KCWGOL9SjiehxFZM5mOJZYTtms4ygR1NvyXHsY-OdgDjb4FPIT5Nhv4lA4oCeWZv4gbkvd0NZNkdpne8vIxeEfPkaeAl4xDIrgqUfZifo1sIhuQfO-YxK3dgsCX5Dh0RvD3OAcb7Y-NZ0OlaOWkzfoxLf45ZRV_82ekY1LvY_Eslmji322FVytHO6mA1aTdvvPHPIRWAbu6b8nq0&state=32515aa29178bb54e5cae9bc9aa24caa3157c25531eaea29" for ::1 at 2016-07-21 21:03:28 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBvOA6P-7b_DwSSw1dB2KX0uRUqWGChZUC4T9nw0UxHAwn1jrI_-G-44rdIJZvTSkQ5M0UCW4Lp0-EsABvDjwrpsmuwMFDMoAsixgLtaUwHVw_Wqe9KCWGOL9SjiehxFZM5mOJZYTtms4ygR1NvyXHsY-OdgDjb4FPIT5Nhv4lA4oCeWZv4gbkvd0NZNkdpne8vIxeEfPkaeAl4xDIrgqUfZifo1sIhuQfO-YxK3dgsCX5Dh0RvD3OAcb7Y-NZ0OlaOWkzfoxLf45ZRV_82ekY1LvY_Eslmji322FVytHO6mA1aTdvvPHPIRWAbu6b8nq0", "state"=>"32515aa29178bb54e5cae9bc9aa24caa3157c25531eaea29"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/hill_project/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 21:03:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 21:03:30 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 21:03:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
