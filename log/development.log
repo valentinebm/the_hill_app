@@ -1122,3 +1122,49 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2016-07-21 21:24:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 299ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2016-07-21 21:24:54 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for ::1 at 2016-07-21 21:24:54 +0200
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBE_j8ppfExjrxv4S0ADFUcMrtZ1W1XsKeb7T6kWCxVegj3RjRhm_SdvpQNMPGRQrLj0zGUCyrygcf7qA4RXhw6EVRLZsuJSNlcVxh2XB2Cij5ScH3bRCMllFz6mK1PLAIlsca7RiVNiTo4D-Dgio4Iz3QWNnKog3ckGY-z0xoXuiSmRcISUjP6g8g7vYvd-s_JORCXPCjQwLOOXVIwHtgRbCqCuMMHe970De3cc3Tzt4DVRMwQ2FhTXvdKgDphfu95JUr3zMpuQs4viKLUHlR8fNvqJheZq3J6k_Srd-lP3RXB-QNnfr0Gh1cQeFFuwiY&state=31cd331eb9601612f421bb0ca7e4341c05fe9d4d066889b6" for ::1 at 2016-07-21 21:24:55 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBE_j8ppfExjrxv4S0ADFUcMrtZ1W1XsKeb7T6kWCxVegj3RjRhm_SdvpQNMPGRQrLj0zGUCyrygcf7qA4RXhw6EVRLZsuJSNlcVxh2XB2Cij5ScH3bRCMllFz6mK1PLAIlsca7RiVNiTo4D-Dgio4Iz3QWNnKog3ckGY-z0xoXuiSmRcISUjP6g8g7vYvd-s_JORCXPCjQwLOOXVIwHtgRbCqCuMMHe970De3cc3Tzt4DVRMwQ2FhTXvdKgDphfu95JUr3zMpuQs4viKLUHlR8fNvqJheZq3J6k_Srd-lP3RXB-QNnfr0Gh1cQeFFuwiY", "state"=>"31cd331eb9601612f421bb0ca7e4341c05fe9d4d066889b6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["uid", "10157207096260113"], ["provider", "facebook"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `exists?`. Please pass the id of the object by calling `.id`. (called from create_with_omniauth at /Users/valentinebm/Desktop/the_hill_app/app/models/user.rb:10)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 21:24:55 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signout" for ::1 at 2016-07-21 21:24:57 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-21 21:24:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
