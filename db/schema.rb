@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160722161552) do
 
   create_table "reigns", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "date"
+    t.datetime "finished"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_reigns_on_user_id", using: :btree

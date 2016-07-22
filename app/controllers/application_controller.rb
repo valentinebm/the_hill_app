@@ -13,7 +13,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_reign
 
   def current_monarch
-    @current_monarch ||= @current_reign.user_id
+    if current_reign
+    @current_monarch ||= @current_reign.user
+    end
   end
   helper_method :current_monarch
 
