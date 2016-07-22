@@ -7,4 +7,14 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
+  def current_reign
+    @current_reign ||= Reign.last
+  end
+  helper_method :current_reign
+
+  def current_monarch
+    @current_monarch ||= @current_reign.user_id
+  end
+  helper_method :current_monarch
+
 end
